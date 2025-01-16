@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Impact";
+    font-weight: 500;
+    src: url("../assets/fonts/impact/impact.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Impacted";
+    font-weight: 500;
+    src: url("../assets/fonts/impact/Impacted.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "UniImpact";
+    font-weight: 500;
+    src: url("../assets/fonts/impact/unicode.impact.ttf") format("truetype");
+}

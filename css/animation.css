@@ -1,0 +1,46 @@
+@keyframes slideFromBottom {
+    0%{
+        opacity: 0;
+        translate: 0 50px;
+    }
+    
+    100%{
+        opacity: 1;
+        translate: 0;
+    }
+}
+
+@keyframes slideToBottom {
+    0%{
+        opacity: 1;
+        translate: 0;
+    }
+    
+    100%{
+        opacity: 0;
+        translate: 0 50px;
+    }
+}
+
+@keyframes scale {
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+    100%{
+        transform: scale(var(--animation-scale-end));
+        opacity: 1;
+    }
+}
+
+@keyframes hide {
+    0%{
+        opacity: 1;
+    }
+    
+    100%{
+        opacity: 0;
+    }
+}
+

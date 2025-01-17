@@ -15,3 +15,8 @@
     font-weight: 500;
     src: url("../assets/fonts/impact/unicode.impact.ttf") format("truetype");
 }
+
+@font-face {
+    font-family: "MicrosoftYahei";
+    src: url("../assets/fonts/microsoft-yahei/chinese.msyh.ttf") format("truetype");
+}

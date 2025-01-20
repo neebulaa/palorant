@@ -20,6 +20,7 @@ const loadingAnimationTextQueue = [
 
 loadingAnimationTextQueue.forEach(async (textObj, textIndex) => {
     await delay(1900 * textIndex);
+    if(textIndex == 0) await delay(100);
 
     if(textObj.last){
         const wordSpanObj = document.createElement("span");
@@ -53,4 +54,3 @@ loadingAnimationTextQueue.forEach(async (textObj, textIndex) => {
 delay(5300).then(() => {
     loadingAnimation.remove();
 });
-

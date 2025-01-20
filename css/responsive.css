@@ -1,0 +1,5 @@
+@media(max-width: 768px){
+    :root {
+        --animation-scale-end: 4;
+    }
+}

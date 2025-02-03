@@ -1,6 +1,7 @@
 [
     {
         "name" : "Phoenix",
+        "slug" : "phoenix",
         "wallpaper" : "./assets/images/agent-images/wallpaper/phoenix.png",
         "description" : "Hailing from the U.K., Phoenix's star power shines through in his fighting style, igniting the battlefield with flash and flare. Whether he's got backup or not, he'll rush into a fight on his own terms.",
         "title" : "The most MVP character",
@@ -14,6 +15,7 @@
     },
     {
         "name" : "Sage",
+        "slug" : "sage",
         "wallpaper" : "./assets/images/agent-images/wallpaper/sage.png",
         "description" : "The stronghold of China, Sage creates safety for herself and her team wherever she goes. Able to revive fallen friends and stave off aggressive pushes, she provides a calm center to a hellish fight.",
         "title" : "The best support",
@@ -27,6 +29,7 @@
     },
     {
         "name" : "Reyna",
+        "slug" : "reyna",
         "wallpaper" : "./assets/images/agent-images/wallpaper/reyna.png",
         "description" : "Forged in the heart of Mexico, Reyna dominates single combat, popping off with each kill she scores. Her capability is only limited by her raw skill, making her highly dependent on performance.",
         "title" : "The most used character",

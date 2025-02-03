@@ -20,7 +20,7 @@ function changeBestAgentsInfo(agent, data){
     bestAgentsRoleIcon.src = agentData.role.icon;
     bestAgentsContentTitle.textContent = agentData.title;
     bestAgentsContentDescription.textContent = agentData.titleDescription;
-    setPropertyValue(bestAgentsRoot, '--agent-wallpaper', `url(../assets/images/agent-images/wallpaper/${agentData.name}.png)`);
+    setPropertyValue(bestAgentsRoot, '--agent-wallpaper', `url(../assets/images/agent-images/wallpaper/${agentData.slug}.png)`);
 }
 
 function changeBestAgentsBody(agent, data){

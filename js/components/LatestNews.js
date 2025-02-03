@@ -36,7 +36,7 @@ function automate(data, index, navigator){
 
 export default async function LatestNews(){
     //initialization
-    const latestNews = await get("../../assets/data/latest-news.json");
+    const latestNews = await get("https://neebulaa.github.io/palorant/assets/data/latest-news.json");
 
     latestNewsContentTitle.textContent = latestNews[0].title;
     latestNewsContentDescription.textContent = latestNews[0].description;

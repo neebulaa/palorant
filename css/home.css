@@ -269,6 +269,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 #about .section {
@@ -452,6 +453,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 #best-agents .section {
@@ -650,6 +652,7 @@
 
 /* latest news section start */
 #latest-news {
+    overflow: hidden;
     z-index: 1;
     margin-top: 4rem;
 }

@@ -1,3 +1,5 @@
+const BASE_URL = "https://neebulaa.github.io/palorant/";
+
 export async function delay(ms){
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -7,7 +9,7 @@ export async function delay(ms){
 }
 
 export async function get(url){
-    return await fetch(url).then(res => res.json());
+    return await fetch(BASE_URL + url).then(res => res.json());
 }
 
 export function getPropertyValue(el, property){

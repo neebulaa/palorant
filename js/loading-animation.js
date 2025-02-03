@@ -1,3 +1,5 @@
+import {delay} from './utils.js';
+
 const loadingAnimation = document.querySelector("#loading-animation");
 const loadingAnimationWrapper = loadingAnimation.querySelector(".loading-animation-wrapper");
 const loadingAnimationTextQueue = [

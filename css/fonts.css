@@ -20,3 +20,38 @@
     font-family: "MicrosoftYahei";
     src: url("../assets/fonts/microsoft-yahei/chinese.msyh.ttf") format("truetype");
 }
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../assets/fonts/open-sans/static/OpenSans-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../assets/fonts/open-sans/static/OpenSans-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../assets/fonts/open-sans/static/OpenSans-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../assets/fonts/open-sans/static/OpenSans-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../assets/fonts/open-sans/static/OpenSans-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Bruce Forever";
+    src: url("../assets/fonts/bruce-forever/BruceForeverRegular-X3jd2.ttf") format("truetype");
+}

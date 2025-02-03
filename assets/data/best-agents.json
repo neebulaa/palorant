@@ -1,0 +1,41 @@
+[
+    {
+        "name" : "Phoenix",
+        "wallpaper" : "./assets/images/agent-images/wallpaper/phoenix.png",
+        "description" : "Hailing from the U.K., Phoenix's star power shines through in his fighting style, igniting the battlefield with flash and flare. Whether he's got backup or not, he'll rush into a fight on his own terms.",
+        "title" : "The most MVP character",
+        "titleDescription" : "The most MVP used Character will total of 2M MVPs this week.",
+        "image" : "./assets/images/agent-images/phoenix.png",
+        "profile" : "./assets/images/agent-images/profile/phoenix.png",
+        "role" : {
+            "text" : "duelist",
+            "icon" : "./assets/icons/agent-role/duelist.svg"
+        }
+    },
+    {
+        "name" : "Sage",
+        "wallpaper" : "./assets/images/agent-images/wallpaper/sage.png",
+        "description" : "The stronghold of China, Sage creates safety for herself and her team wherever she goes. Able to revive fallen friends and stave off aggressive pushes, she provides a calm center to a hellish fight.",
+        "title" : "The best support",
+        "titleDescription" : "The most character that assisted around 12M times in the match.",
+        "image" : "./assets/images/agent-images/sage.png",
+        "profile" : "./assets/images/agent-images/profile/sage.png",
+        "role" : {
+            "text" : "sentinel",
+            "icon" : "./assets/icons/agent-role/sentinel.svg"
+        }
+    },
+    {
+        "name" : "Reyna",
+        "wallpaper" : "./assets/images/agent-images/wallpaper/reyna.png",
+        "description" : "Forged in the heart of Mexico, Reyna dominates single combat, popping off with each kill she scores. Her capability is only limited by her raw skill, making her highly dependent on performance.",
+        "title" : "The most used character",
+        "titleDescription" : "The most used character with total of 5M picks this week.",
+        "image" : "./assets/images/agent-images/reyna.png",
+        "profile" : "./assets/images/agent-images/profile/reyna.png",
+        "role" : {
+            "text" : "duelist",
+            "icon" : "./assets/icons/agent-role/duelist.svg"
+        }
+    }
+]

@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --animation-scale-end: 8;
+    --white: #ffffff;
+    --dim-white: #EFEFEF;
+    --gray: #E0E0E0;
+    --dark-gray: #A6A6A6;
+    --primary: #D7FA00;
+    --black: #000000;
+    --dim-black: #111111;
+    --light-black: #222222;
+    --super-light-black: #444444;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-size: 12.8px;
+}
+
+body {
+    font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: var(--dim-white);
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.section {
+    max-width: 75rem; /* 1200px */
+    margin: auto;
+    padding-inline: 1rem; /* 16px */
+    width: 100%;
+    flex: 1;
+}
+
+.section-title {
+    display: flex;
+}
+
+.section-title-content {
+    height: 15rem; /* 240px */
+    width: 18.125rem; /* 290px */
+    padding-inline: 1.5rem; /* 24px */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem; /* 8px */
+    background: var(--primary);
+    color: var(--black);
+}
+
+.section-title-content .heading-number {
+    font-size: 6rem; /* 96px */
+}
+
+.section-title-content h2 {
+    font-size: 3rem; /* 48px */
+    text-transform: uppercase;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+.btn {
+    appearance: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem; /* 16px */
+    background: none;
+
+    /* default style */
+    padding: 0.75rem 1.25rem; /* 12px 20px */
+    border-radius: 1000px;
+    background: var(--primary);
+    font-weight: 600;
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem; /* 12px */
+}
+
+.btn-pilled {
+    padding: 0.3125rem 0.625rem; /* 5px 10px */
+    transition: all 0.3s ease;
+}
+
+.btn-pilled:hover {
+    opacity: 70%;
+}
+
+.btn-bolded {
+    background: var(--white);
+    color: var(--black);
+    padding: 0.625rem 0.625rem; /* 10px 10px */
+    font-size: 3rem; /* 48px */
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+
+.btn-bolded:hover {
+    background: var(--primary);
+    color: var(--black);
+}
+
+.btn-basic {
+    font-size: 1.125rem; /* 18px */
+    border: 0.0625rem solid black; /* 1px */
+    padding: 0.625rem 1.5rem; /* 10px 24px */
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.btn-basic::after {
+    content: '';
+    position: absolute;
+    width: 110%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    translate: -100%;
+    background: var(--black);
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.btn-basic:hover {
+    color: var(--white);
+}
+
+.btn-basic:hover::after {
+    translate: 0;
+}
+
+.icon {
+    aspect-ratio: 1;
+    display: inline-block;
+    width: 1.5rem; /* 24px */
+    height: 1.5rem; /* 24px */
+}
+
+.impacted {
+    font-weight: 500;
+    font-family: "Impact", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.mt-3 {
+    margin-top: 0.75rem; /* 12px */
+}
+
+.mt-4 {
+    margin-top: 1rem; /* 16px */
+}
+
+.mt-5 {
+    margin-top: 1.25rem; /* 20px */
+}
+
+.mt-12 {
+    margin-top: 3rem; /* 48px */
+}
+
+.mt-10 {
+    margin-top: 2.5rem; /* 40px */
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.bruce-forever {
+    font-family: "Bruce Forever", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.0625rem; /* 1px */
+}
+
+.text-highlighter{
+    color: var(--primary);
+}
+
+.game-additional {
+    display: flex;
+    gap: 1rem; /* 16px */
+}
+
+.game-additional-image {
+    height: 6.25rem; /* 100px */
+}

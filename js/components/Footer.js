@@ -1,5 +1,5 @@
 export default async function Footer(){
-    const footerEl = await fetch("../../page-parts/Footer.html").then(res => res.text());
+    const footerEl = await fetch("./page-parts/Footer.html").then(res => res.text());
     const footerRoot = document.querySelector('footer#footer');
     footerRoot.innerHTML = footerEl;
 

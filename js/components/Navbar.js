@@ -1,6 +1,6 @@
 export default async function Navbar(){
     // init
-    const navbarEl = await fetch("../../page-parts/Navbar.html").then(res => res.text());
+    const navbarEl = await fetch("./page-parts/Navbar.html").then(res => res.text());
     const navbarRoot = document.querySelector('nav#navbar');
     navbarRoot.innerHTML = navbarEl;
 

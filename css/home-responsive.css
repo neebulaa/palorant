@@ -39,7 +39,7 @@
         top: 0;
         right: 0;
         width: 80%;
-        height: 100dvh;
+        height: min(100dvh, 800px);
         background: var(--black);
         flex-direction: column;
         justify-content: space-between;
@@ -187,6 +187,8 @@
 
     #best-agents .best-agents-agent-body {
         max-width: 30rem;
+        bottom: 0;
+        height: initial;
         left: 65%;
         width: 100%;
     }
@@ -238,8 +240,6 @@
     #best-agents .best-agents-content p  {
         max-width: 18rem;
         text-align: start;
-        /* background: var(--gray);
-        padding: 0.625rem; */
     }
 
     #best-agents .best-agents-content h2  {
@@ -255,6 +255,10 @@
 
     #best-agents .btn-agents-view-more {
         order: 1;
+    }
+
+    #best-agents .best-agents-right .best-agents-feature{
+        flex: initial;
     }
 
     /* best agent end */
@@ -281,6 +285,11 @@
     #latest-news .latest-news-content-description {
         max-width: 100%; 
         text-align: start;
+    }
+
+    #latest-news .latest-news-content-navigator-identifiers span {
+        width: 1.5rem;
+        height: 1.5rem;
     }
     /* latest news end */
 
@@ -369,7 +378,7 @@
 
     #best-agents .best-agents-agent-info-name {
         font-size: 1.35rem;
-        padding: 1.5rem 3.5rem;
+        padding: 1.3rem 3.3rem;
     }
 
     #best-agents .best-agents-content p {
@@ -390,6 +399,15 @@
 
     #best-agents .best-agents-right .best-agents-feature  {
         gap: 1rem;
+    }
+
+    #best-agents .best-agents-agent-info-name {
+        font-size: 1.2rem;
+    }
+
+    #best-agents .best-agents-agent-info-description {
+        font-size: .8rem;
+        max-width: 16rem;
     }
 
     #latest-news .section .latest-news-content .latest-news-content-images-viewer {

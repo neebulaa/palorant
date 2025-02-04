@@ -414,6 +414,10 @@
         left: 70%;
     }
 
+    #best-agents .best-agents-content {
+        gap: .5rem
+    }
+
     #latest-news .section .latest-news-content .latest-news-content-images-viewer {
         height: 20rem;
     }
@@ -451,10 +455,15 @@
     }
 
     #best-agents .best-agents-right .best-agents-feature{
+        margin-top: 1rem;
         width: 100%;
         align-items: center;
         justify-content: space-between;
         flex-direction: row;
+    }
+
+    #best-agents .best-agents-right {
+        padding-top: 6rem;
     }
 }
 

@@ -410,6 +410,10 @@
         max-width: 16rem;
     }
 
+    #best-agents .best-agents-agent-body {
+        left: 70%;
+    }
+
     #latest-news .section .latest-news-content .latest-news-content-images-viewer {
         height: 20rem;
     }
@@ -432,6 +436,25 @@
     #contact-us .social-medias .icon {
         width: 3rem; 
         height: 3rem;
+    }
+}
+
+@media(max-width: 400px){
+    #best-agents .best-agents-right {
+        gap: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #best-agents .best-agents-right .best-agents-wardrobe {
+        flex-direction: row;
+    }
+
+    #best-agents .best-agents-right .best-agents-feature{
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
     }
 }
 

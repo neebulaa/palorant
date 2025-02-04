@@ -55,6 +55,7 @@ function changeBestAgentsBody(agent, data){
 export default async function BestAgents(){
     //initalization
     const bestAgents = await get("./assets/data/best-agents.json");
+    console.log(bestAgents);
     
     setPropertyValue(bestAgentsRoot, '--agent-wallpaper', `url(../assets/images/agent-images/wallpaper/${bestAgents[0].slug}.png)`);
     bestAgentsBodyImg.src = bestAgents[0].image;

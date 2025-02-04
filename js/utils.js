@@ -1,4 +1,4 @@
-const BASE_URL = "https://neebulaa.github.io/palorant/";
+const BASE_URL = "./";
 
 export async function delay(ms){
     return new Promise((resolve, reject) => {

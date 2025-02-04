@@ -5,7 +5,6 @@
     }
 
     .section-title-content {
-        width: 100%;
         height: max-content;
         padding: 1rem;
         flex-direction: row;
@@ -19,6 +18,7 @@
     }
     
     .section-title-content h2 {
+        line-height: 1.5;
         order: 1;
         font-size: 2.5rem;
     }
@@ -46,7 +46,7 @@
         padding: 2rem;
         translate: 120%;
         transform: skew(-10deg);
-        transition: .5s;
+        transition: .3s;
         /* opacity: 0; */
     }
     
@@ -155,6 +155,135 @@
     }
     /* end start */
 
+    /* best agent start */
+
+    #best-agents {
+        --best-agents-header-height: 12rem;
+    }
+
+    #best-agents::after {
+        width: 100%;
+        left: 0;
+        transform: skew(0deg);
+        border-radius: 0;
+        z-index: -2;
+    }
+    
+    #best-agents::before {
+        /* width: 100%; */
+        height: var(--best-agents-header-height);
+        top: var(--best-agents-header-height);
+        transform: skew(-10deg);
+        border-radius: 1.25rem 0 0 1.25rem; /* 20px */
+    }
+
+    #best-agents .section {
+        flex-direction: column;
+    }
+
+    #best-agents .best-agents-header .section-title-content {
+        z-index: -1;
+    }
+
+    #best-agents .best-agents-agent-body {
+        max-width: 30rem;
+        left: 65%;
+        width: 100%;
+    }
+
+    #best-agents .best-agents-agent-body img {
+        filter: drop-shadow(0 0 0 var(--gray))
+    }
+
+    #best-agents .best-agents-right {
+        gap: 1rem;
+        flex-direction: row;
+    }
+
+    #best-agents .best-agents-agent-info {
+        margin-top: 2rem;
+    }
+
+    #best-agents .best-agents-right .best-agents-feature  {
+        gap: 1.5rem;
+    }
+
+    #best-agents .best-agents-wardrobe .best-agents-wardrobe-profile {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    #best-agents .best-agents-wardrobe .best-agents-wardrobe-profile.best-agents-wardrobe-profile-active {
+        border: 0.225rem solid var(--primary);
+    }
+
+    #best-agents .best-agents-agent-info-description {
+        font-size: .85rem;
+        max-width: 22rem;
+    } 
+
+    #best-agents .best-agents-agent-info-role p {
+        letter-spacing: .5px;
+    }
+
+    #best-agents .best-agents-feature {
+        order: 1;
+    }
+    
+    #best-agents .best-agents-content {
+        order: 0;
+        align-items: flex-start;
+    }
+
+    #best-agents .best-agents-content p  {
+        max-width: 18rem;
+        text-align: start;
+        /* background: var(--gray);
+        padding: 0.625rem; */
+    }
+
+    #best-agents .best-agents-content h2  {
+        font-size: 2.5rem;
+        max-width: max-content !important;
+        text-align: start;
+    }
+    
+    #best-agents .best-agents-wardrobe {
+        order: 0;
+        flex-direction: row;
+    }
+
+    #best-agents .btn-agents-view-more {
+        order: 1;
+    }
+
+    /* best agent end */
+
+    /* latest news start */
+    #latest-news .section {
+        flex-direction: column;
+    }
+
+    #latest-news .section::before {
+        display: none;
+    }
+
+    #latest-news .latest-news-content-info {
+        flex-direction: column;
+    }
+
+    #latest-news .latest-news-content-navigator {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #latest-news .latest-news-content-description {
+        max-width: 100%; 
+        text-align: start;
+    }
+    /* latest news end */
+
     /* contact us start */
     #contact-us h2 {
         font-size: 3rem; 
@@ -186,8 +315,13 @@
         top: initial;
         left: initial;
         border: 1px solid var(--black);
+        scale: .8;
     }
-    
+
+    #contact-us .btn.back-to-top:hover{
+        scale: 1;
+    }
+
     #contact-us .btn.back-to-top .icon {
         width: 2.5rem; /*60px*/
         height: 2.5rem; /*60px*/
@@ -198,11 +332,17 @@
         height: 3.25rem;
     }
     /* contact us end */
+
+
 }
 
 @media(max-width: 500px){
     :root {
         font-size: 12px;
+    }
+
+    .section-title-content, .section-title {
+        width: 100% !important;
     }
     
     #hero::after {
@@ -217,6 +357,54 @@
     #about .about-content .about-content-left::before {
         width: 85%;
         height: 11.75rem; /* 220px */
+    }
+
+    #best-agents .best-agents-agent-info-role {
+        max-width: 10rem;
+    }
+
+    #best-agents .best-agents-agent-info {
+        gap: .5rem;
+    }
+
+    #best-agents .best-agents-agent-info-name {
+        font-size: 1.35rem;
+        padding: 1.5rem 3.5rem;
+    }
+
+    #best-agents .best-agents-content p {
+        background: var(--gray);
+        padding: .625rem;
+    }
+
+    #best-agents .best-agents-content h2  {
+        font-size: 2.2rem;
+        max-width: max-content !important;
+        text-align: start;
+    }
+
+    #best-agents .best-agents-wardrobe {
+        flex-direction: column;
+        border: 1px solid var(--dim-white);
+    }
+
+    #best-agents .best-agents-right .best-agents-feature  {
+        gap: 1rem;
+    }
+
+    #latest-news .section .latest-news-content .latest-news-content-images-viewer {
+        height: 20rem;
+    }
+
+    #latest-news .section-title-content::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 50%;
+        height: 100%;
+        background: var(--primary);
+        z-index: -1;
     }
 
     #contact-us .social-medias {
@@ -278,7 +466,6 @@
         width: 85%;
         height: 9.75rem; /* 220px */
     }
-
 
     #contact-us .contact-us-email .icon {
         width: 2rem;

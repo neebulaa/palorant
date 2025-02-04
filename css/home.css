@@ -462,7 +462,6 @@
     gap: 2rem; /* 32px */
     padding-bottom: 5rem; /* 80px */
 }
-/* background-size: cover; */
 
 #best-agents::after {
     content: '';
@@ -538,8 +537,8 @@
 #best-agents .best-agents-agent-info-role {
     display: flex;
     align-items: center;
-    height: 2rem; /* 32px */
     max-width: 12.5rem; /* 200px */
+    height: 2rem; /* 32px */
     border: 0.0625rem solid var(--black); /* 1px */
 }
 
@@ -575,6 +574,7 @@
     font-weight: 400;
     width: max-content;
     max-width: 18.75rem; /*300px*/
+    font-size: 1.5rem;
 }
 
 #best-agents .best-agents-agent-info-description {
@@ -588,7 +588,7 @@
     position: absolute;
     z-index: -1;
     bottom: 0;
-    left: 50%;
+    left: 55%;
     translate: -50%;
     max-width: 32.5rem; /* 520px */
 }
@@ -598,7 +598,16 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    padding-block: 2rem; /* 32px */
+    padding-top: 2rem; /* 32px */
+}
+
+#best-agents .best-agents-right .best-agents-feature {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100%;
+    gap: 2rem;
 }
 
 #best-agents .best-agents-wardrobe {
@@ -629,9 +638,11 @@
 }
 
 #best-agents .best-agents-content {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: flex-end;
     gap: 1rem; /* 16px */
 }
 
@@ -693,6 +704,8 @@
 }
 
 #latest-news .section .latest-news-title .section-title .section-title-content {
+    position: relative;
+    z-index: 1;
     height: 100%;
     width: 20rem;
 }
@@ -704,7 +717,7 @@
 }
 
 #latest-news .section .latest-news-content .latest-news-content-images{
-    height: 23rem;
+    height: 100%;
     display: flex;
 
     transition: .5s; /* slide news */
@@ -738,7 +751,6 @@
     background: var(--super-light-black);
     border: 0.3125rem solid var(--light-black); /* 5px */
     border-radius: 50%;
-
     cursor: pointer;
 }
 
@@ -747,7 +759,7 @@
 }
 
 #latest-news .latest-news-content-description {
-    width: 28.125rem; /* 450px */
+    max-width: 28.125rem; /* 450px */
     text-align: end;
 }
 

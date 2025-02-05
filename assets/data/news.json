@@ -1,0 +1,86 @@
+[
+    {
+        "title": "Game Changer Championa",
+        "slug": "game-changer-championa",
+        "description": "Discover the latest innovations in gaming technology that are set to revolutionize the industry.",
+        "thumb": "./assets/images/news/news1.png",
+        "created_at": "02 - January - 2025"
+    },
+    {
+        "title": "Future Tech Expo 2025",
+        "slug": "future-tech-expo-2025",
+        "description": "Explore the cutting-edge advancements in technology at the Future Tech Expo.",
+        "thumb": "./assets/images/news/news2.png",
+        "created_at": "15 - March - 2025"
+    },
+    {
+        "title": "AI in Healthcare Summit",
+        "slug": "ai-in-healthcare-summit",
+        "description": "Learn how artificial intelligence is transforming healthcare.",
+        "thumb": "./assets/images/news/news3.png",
+        "created_at": "10 - April - 2025"
+    },
+    {
+        "title": "Sustainable Energy Conference",
+        "slug": "sustainable-energy-conference",
+        "description": "Join the global conversation on sustainable energy solutions.",
+        "thumb": "./assets/images/news/news4.png",
+        "created_at": "22 - May - 2025"
+    },
+    {
+        "title": "Space Exploration Symposium",
+        "slug": "space-exploration-symposium",
+        "description": "Dive into the latest discoveries and missions in space exploration.",
+        "thumb": "./assets/images/news/news5.png",
+        "created_at": "07 - June - 2025"
+    },
+    {
+        "title": "Cybersecurity World Forum",
+        "slug": "cybersecurity-world-forum",
+        "description": "Stay ahead of the curve in cybersecurity.",
+        "thumb": "./assets/images/news/news6.png",
+        "created_at": "18 - July - 2025"
+    },
+    {
+        "title": "Global Fintech Innovation Day",
+        "slug": "global-fintech-innovation-day",
+        "description": "Celebrate the future of financial technology.",
+        "thumb": "./assets/images/news/news7.png",
+        "created_at": "30 - August - 2025"
+    },
+    {
+        "title": "Smart Cities of Tomorrow",
+        "slug": "smart-cities-of-tomorrow",
+        "description": "Explore how smart technologies are shaping the cities of the future.",
+        "thumb": "./assets/images/news/news8.png",
+        "created_at": "12 - September - 2025"
+    },
+    {
+        "title": "Climate Action Summit",
+        "slug": "climate-action-summit",
+        "description": "Join global leaders in the fight against climate change.",
+        "thumb": "./assets/images/news/news9.png",
+        "created_at": "25 - October - 2025"
+    },
+    {
+        "title": "Next-Gen Robotics Expo",
+        "slug": "next-gen-robotics-expo",
+        "description": "Witness the future of robotics at this groundbreaking expo.",
+        "thumb": "./assets/images/news/news10.png",
+        "created_at": "05 - November - 2025"
+    },
+    {
+        "title": "Digital Transformation Conference",
+        "slug": "digital-transformation-conference",
+        "description": "Learn how businesses are leveraging digital technologies to drive innovation and growth.",
+        "thumb": "./assets/images/news/news11.png",
+        "created_at": "20 - December - 2025"
+    },
+    {
+        "title": "EdTech Revolution 2025",
+        "slug": "edtech-revolution-2025",
+        "description": "Discover how technology is reshaping education.",
+        "thumb": "./assets/images/news/news12.png",
+        "created_at": "08 - February - 2026"
+    }
+]

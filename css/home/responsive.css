@@ -1,74 +1,4 @@
 @media(max-width: 768px){
-
-    .game-additional-image {
-        height: 5rem; /* 100px */
-    }
-
-    .section-title-content {
-        height: max-content;
-        padding: 1rem;
-        flex-direction: row;
-        gap: 1rem;
-        justify-content: space-between;
-    }
-
-    .section-title-content .heading-number  {
-        font-size: 3rem;
-        order: 0;
-    }
-    
-    .section-title-content h2 {
-        line-height: 1.5;
-        order: 1;
-        font-size: 2.5rem;
-    }
-
-    /* navbar start */
-    #navbar .navbar-burger-wrapper {
-        display: flex;
-    }
-
-    #navbar .navbar-burger {
-        display: block;
-        position: relative;
-        z-index: 10;
-    }
-
-    #navbar .section .navbar-links {
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 80%;
-        height: min(100dvh, 800px);
-        background: var(--black);
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 2rem;
-        translate: 120%;
-        transform: skew(-10deg);
-        transition: .3s;
-        /* opacity: 0; */
-    }
-    
-    #navbar.navbar-open .section .navbar-links {
-        /* opacity: 1; */
-        box-shadow: 0 0 0 100vmax rgba(0,0,0,.6);
-        translate: 0;
-        transform: skew(0);
-    }
-
-    #navbar .section .navbar-links ul {
-        font-size: 2rem;
-        flex-direction: column;
-    }
-
-    #navbar .section .navbar-links ul li a {
-        padding-inline: .5rem;
-        width: 100%;
-    }
-
-    /* navbar end */
-
     /* hero section start */
     #hero .section {
         flex-direction: column;
@@ -99,7 +29,6 @@
     #hero .hero-right .hero-download-inpc-info {
         display: none;
     }
-
     /* hero section start */
 
     /* about start */
@@ -140,7 +69,6 @@
         left: 50%;
     }
 
-
     #about .about-content {
         margin-top: 5rem;
         flex-direction: column;
@@ -156,7 +84,6 @@
     /* end start */
 
     /* best agent start */
-
     #best-agents {
         --best-agents-header-height: 12rem;
     }
@@ -260,7 +187,6 @@
     #best-agents .best-agents-right .best-agents-feature{
         flex: initial;
     }
-
     /* best agent end */
 
     /* latest news start */
@@ -292,72 +218,16 @@
         height: 1.5rem;
     }
     /* latest news end */
-
-    /* contact us start */
-    #contact-us h2 {
-        font-size: 3rem; 
-    }
-
-    #contact-us .contact-us-email .icon {
-        width: 2.5rem;
-        height: 2.5rem;
-        color: var(--primary);
-    }
-    
-    #contact-us .contact-us-email p {
-        font-size: 1.5rem;
-        font-weight: 600;
-    }
-
-    #contact-us .btn.back-to-top p {
-        display: none;
-    }
-
-    #contact-us .btn.back-to-top {
-        position: fixed;
-        border-radius: 100rem;
-        min-width: initial;
-        aspect-ratio: 1;
-        height: initial;
-        bottom: 2rem;
-        right: 2rem;
-        top: initial;
-        left: initial;
-        border: 1px solid var(--black);
-        scale: .8;
-    }
-
-    #contact-us .btn.back-to-top:hover{
-        scale: 1;
-    }
-
-    #contact-us .btn.back-to-top .icon {
-        width: 2.5rem; /*60px*/
-        height: 2.5rem; /*60px*/
-    }
-    
-    #contact-us .social-medias .icon {
-        width: 3.25rem; 
-        height: 3.25rem;
-    }
-    /* contact us end */
-
-
 }
 
 @media(max-width: 500px){
-    :root {
-        font-size: 12px;
-    }
-
-    .section-title-content, .section-title {
-        width: 100% !important;
-    }
-    
+    /* hero section start */
     #hero::after {
         background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,.75), rgba(0,0,0,.25), rgba(0,0,0,1));
     }
+    /* hero section end */
 
+    /* about section start */
     #about .about-content .about-content-left::after {
         width: 50%;
         height: 100%;
@@ -365,9 +235,11 @@
     
     #about .about-content .about-content-left::before {
         width: 85%;
-        height: 11.75rem; /* 220px */
+        height: 11.75rem;
     }
-
+    /* about section end */
+    
+    /* best agents section start */
     #best-agents .best-agents-agent-info-role {
         max-width: 10rem;
     }
@@ -417,11 +289,13 @@
     #best-agents .best-agents-content {
         gap: .5rem
     }
+    /* best agents section end */
 
+    /* latest news section start */
     #latest-news .section .latest-news-content .latest-news-content-images-viewer {
         height: 20rem;
     }
-
+    
     #latest-news .section-title-content::after {
         content: '';
         position: absolute;
@@ -432,18 +306,13 @@
         background: var(--primary);
         z-index: -1;
     }
+    /* latest news section end */
 
-    #contact-us .social-medias {
-        flex-wrap: wrap;
-    }
     
-    #contact-us .social-medias .icon {
-        width: 3rem; 
-        height: 3rem;
-    }
 }
 
 @media(max-width: 400px){
+    /* best agents section start */
     #best-agents .best-agents-right {
         gap: 1rem;
         flex-direction: column;
@@ -465,13 +334,11 @@
     #best-agents .best-agents-right {
         padding-top: 6rem;
     }
+    /* best agents section end */
 }
 
 @media(max-width: 350px){
-    #navbar .section .navbar-links {
-        translate: 140%;
-    }
-
+    /* hero section start */
     #hero::before {
         width: 100%;
         clip-path: polygon(0 0, 100% 0, 100% 50%, 0 60%);
@@ -480,7 +347,9 @@
     #hero::after {
         background: linear-gradient(to right, rgba(0,0,0,.75), transparent);
     }
+    /* hero section end */
 
+    /* about section start */
     #about .about-content-info {
         flex-direction: column;
         padding: 1rem;
@@ -516,10 +385,5 @@
         width: 85%;
         height: 9.75rem; /* 220px */
     }
-
-    #contact-us .contact-us-email .icon {
-        width: 2rem;
-        height: 2rem;
-    }
-    
+    /* about section end */
 }

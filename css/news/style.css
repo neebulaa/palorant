@@ -1,0 +1,104 @@
+#news .news-container {
+    margin-block: 4.6875rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 4rem 2rem;
+}
+
+
+#news .news-card .news-card-image {
+    border-radius: 1.25rem 0 1.25rem 0;
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+    background: var(--dim-white);
+    height: max-content;
+    position: relative;
+}
+
+#news .news-card .news-card-image::before {
+    content : "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--primary);
+    top: -3rem;
+    left: 90%;
+    rotate: 45deg;
+    z-index: 10;
+    translate: 100%;
+    transition: .3s;
+}
+
+#news .news-card .news-card-image::after {
+    content : "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--primary);
+    bottom: -3rem;
+    right: 90%;
+    rotate: 45deg;
+    z-index: 10;
+    translate: -100%;
+    transition: .3s;
+}
+
+#news .news-card .news-card-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+}
+
+#news .news-card .news-card-title {
+    margin-top: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#news .news-card .news-card-description {
+    margin-top: 0.625rem;
+}
+
+#news .news-card .news-card-date {
+    margin-top: 1.25rem;
+    font-weight: "Bruce Forever", system-ui;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#news .news-card:hover .news-card-image img {
+    scale: 1.15;
+    rotate: 3deg;
+}
+
+#news .news-card:hover .news-card-image::before, #news .news-card:hover .news-card-image::after {
+    translate: 0;
+}
+
+#news-detail .section {
+    max-width: 62.5rem;
+    padding-block: 3rem;
+}
+
+#news-detail .news-detail-title {
+    font-weight: 800;
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+#news-detail .news-detail-navigator {
+    font-weight: 700;
+    background: var(--black);
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem 1.5rem;
+    color: var(--white);
+}
+
+#news-detail .news-detail-content :first-child ~ * {
+    margin-top: 1rem;
+}

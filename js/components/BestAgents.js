@@ -20,7 +20,7 @@ function changeBestAgentsInfo(agent, data){
     bestAgentsRoleIcon.src = agentData.role.icon;
     bestAgentsContentTitle.textContent = agentData.title;
     bestAgentsContentDescription.textContent = agentData.titleDescription;
-    setPropertyValue(bestAgentsRoot, '--agent-wallpaper', `url(../assets/images/agent-images/wallpaper/${agentData.slug}.png)`);
+    setPropertyValue(bestAgentsRoot, '--agent-wallpaper', `url(../../assets/images/agent-images/wallpaper/${agentData.slug}.png)`);
 }
 
 function changeBestAgentsBody(agent, data){
@@ -55,9 +55,8 @@ function changeBestAgentsBody(agent, data){
 export default async function BestAgents(){
     //initalization
     const bestAgents = await get("./assets/data/best-agents.json");
-    console.log(bestAgents);
     
-    setPropertyValue(bestAgentsRoot, '--agent-wallpaper', `url(../assets/images/agent-images/wallpaper/${bestAgents[0].slug}.png)`);
+    setPropertyValue(bestAgentsRoot, '--agent-wallpaper', `url(../../assets/images/agent-images/wallpaper/${bestAgents[0].slug}.png)`);
     bestAgentsBodyImg.src = bestAgents[0].image;
     bestAgentsName.textContent = bestAgents[0].name;
     bestAgentsDescription.textContent = bestAgents[0].description;

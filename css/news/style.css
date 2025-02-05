@@ -99,6 +99,6 @@
     color: var(--white);
 }
 
-#news-detail .news-detail-content :first-child ~ * {
+#news-detail .news-detail-content > *:not(:first-child) {
     margin-top: 1rem;
 }

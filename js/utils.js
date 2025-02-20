@@ -1,4 +1,5 @@
-const BASE_URL = "./";
+const BASE_URL = "/";
+// example https://neebulaa.github.io/palorant/
 
 export async function delay(ms){
     return new Promise((resolve, reject) => {
@@ -18,4 +19,13 @@ export function getPropertyValue(el, property){
 
 export function setPropertyValue(el, property, value){
     return el.style.setProperty(property, value);
+}
+
+export function getFileName(){
+    const currentPath = window.location.pathname;
+    let fileName = currentPath.split("/").pop();
+    fileName = fileName.split('.')[0];
+
+    return fileName; 
+    // in website that root at / this will returns ""
 }

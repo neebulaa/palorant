@@ -1,3 +1,5 @@
+import {getFileName} from '../utils.js';
+
 export default async function Navbar(){
     const navbarEl = await fetch("./page-parts/Navbar.html").then(res => res.text());
     const navbarRoot = document.querySelector('nav#navbar');
@@ -8,10 +10,11 @@ export default async function Navbar(){
     navbarRoot.innerHTML = bodyContent;
 
     // highlight current active link
-    const currentPath = window.location.pathname;
-    let fileName = currentPath.slice(1).split('.')[0];
-    if(fileName == 'news-detail'){
-        fileName =  'news';
+    let fileName = getFileName();
+    if(fileName == "news-detail"){
+        fileName =  "news";
+    }else if(fileName == ""){
+        fileName = "index";
     }
     
     const currentActive = document.querySelector('.navlink-active');

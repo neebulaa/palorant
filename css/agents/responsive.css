@@ -5,6 +5,14 @@
         font-size: 8.5rem;
     }
 
+    #agent-wardrobe .agent-signature-saying {
+        margin-top: .25rem;
+    }
+
+    #agent-wardrobe .agent-role {
+        margin-top: 1rem;
+    }
+
     #agent-wardrobe .section {
         flex-direction: column;
         padding-block: 4rem 2rem;
@@ -24,7 +32,6 @@
     }
 
     #agent-wardrobe .agent-description {
-        margin-top: 4rem;
         font-size: .9rem;
         max-width: 250px;
     }
@@ -41,6 +48,7 @@
         background: var(--dim-white);
         z-index: -1;
         bottom: 0;
+        opacity: .6;
     }
 
     #agent-wardrobe .agent-plate-stander::before {
@@ -99,7 +107,6 @@
 
 @media(max-width: 650px){
     /* agent wardrobe section start */
-    
     #agent-wardrobe .large-agent-name {
         display: none;
     }

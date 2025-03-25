@@ -100,32 +100,36 @@ function insertListener(agents){
     });
 
     window.addEventListener('resize', function(){
-        const currentWidth = window.innerWidth;
-        if (previousWindowWidth < 500 && currentWidth >= 500 && currentWidth < 768) {
-            // <500px to 500-767px
-            previousWindowWidth = currentWidth;
-            agentProfilePerSlider = 4;
-            resizeWardrobeSelection(agents);
-        } 
-        else if (previousWindowWidth < 768 && currentWidth >= 768) {
-            //<768px to >=768px
-            previousWindowWidth = currentWidth;
-            agentProfilePerSlider = 6;
-            resizeWardrobeSelection(agents);
-        } 
-        else if (previousWindowWidth >= 768 && currentWidth < 768 && currentWidth >= 500) {
-            // >=768px to 500-767px
-            previousWindowWidth = currentWidth;
-            agentProfilePerSlider = 4;
-            resizeWardrobeSelection(agents);
-        } 
-        else if (previousWindowWidth >= 500 && currentWidth < 500) {
-            // >=500px to <500px
-            previousWindowWidth = currentWidth;
-            agentProfilePerSlider = 3;
-            resizeWardrobeSelection(agents);
-        }
+        checkScreenSize(agents);
     });
+}
+
+function checkScreenSize(agents){
+    const currentWidth = window.innerWidth;
+    if ((previousWindowWidth < 500 && currentWidth >= 500 && currentWidth < 768) || (currentWidth >= 500 && currentWidth < 768)) {
+        // <500px to 500-767px
+        previousWindowWidth = currentWidth;
+        agentProfilePerSlider = 4;
+        resizeWardrobeSelection(agents);
+    } 
+    else if ((previousWindowWidth < 768 && currentWidth >= 768) || currentWidth >= 768) {
+        //<768px to >=768px
+        previousWindowWidth = currentWidth;
+        agentProfilePerSlider = 6;
+        resizeWardrobeSelection(agents);
+    } 
+    else if ((previousWindowWidth >= 768 && currentWidth < 768 && currentWidth >= 500)) {
+        // >=768px to 500-767px
+        previousWindowWidth = currentWidth;
+        agentProfilePerSlider = 4;
+        resizeWardrobeSelection(agents);
+    } 
+    else if ((previousWindowWidth >= 500 && currentWidth < 500) || currentWidth < 500) {
+        // >=500px to <500px
+        previousWindowWidth = currentWidth;
+        agentProfilePerSlider = 3;
+        resizeWardrobeSelection(agents);
+    }
 }
 
 function resizeWardrobeSelection(agents){
@@ -189,7 +193,7 @@ export default async function AgentWardrobe(agents){
     abilityDesc.textContent = agents[0].specialAbilities[0].description;
     abilityVideo.src = agents[0].specialAbilities[0].video;
 
-    resizeWardrobeSelection(agents);
+    checkScreenSize(agents);
     insertListener(agents);
 
     return agents;

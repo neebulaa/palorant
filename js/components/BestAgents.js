@@ -73,7 +73,7 @@ export default async function BestAgents(){
             `;
         }).join('');
         
-        bestAgentsWardobe.innerHTML = bestAgentsEls;
+    bestAgentsWardobe.innerHTML = bestAgentsEls;
 
     // operation
     const bestAgentsWardobeProfiles = document.querySelectorAll(".best-agents-wardrobe-profile");

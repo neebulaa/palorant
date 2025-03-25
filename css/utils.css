@@ -335,6 +335,15 @@ body {
     color: var(--white);
 }
 /* footer section end */
+.large-text-bg {
+    font-size: 30rem;
+    color: var(--gray);
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    top: 30%;
+    z-index: -1000;
+}
 
 .semibold {
     font-weight: 600;
@@ -693,6 +702,11 @@ ul, ol, li {
         font-size: 12px;
     }
 
+    .large-text-bg {
+        font-size: 25rem;
+        top: 50%;
+    }
+
     .section-title-content, .section-title {
         width: 100% !important;
     }
@@ -718,6 +732,11 @@ ul, ol, li {
 }
 
 @media(max-width: 350px){
+    .large-text-bg {
+        font-size: 20rem;
+        top: 60%;
+    }
+
     /* navbar start */
     #navbar .section .navbar-links {
         translate: 140%;

@@ -1,6 +1,7 @@
 import Home from './pages/Home.js';
 import News from './pages/News.js';
 import Maps from './pages/Maps.js';
+import Agents from './pages/Agents.js';
 import Navbar from './components/Navbar.js';
 import Footer from './components/Footer.js';
 import ContactUs from './components/ContactUs.js';
@@ -12,6 +13,8 @@ async function loadData(){
     const fileName = getFileName();
     if(fileName == 'index' || fileName == ""){
         await Home();
+    }else if(fileName == 'agents'){
+        await Agents();
     }else if(fileName == 'news'){
         await News();
     }else if (fileName == 'maps'){

@@ -2,6 +2,7 @@
     /* hero section start */
     #hero .section {
         flex-direction: column;
+        text-align: center;
     }
     
     #hero .section .hero-left {
@@ -43,6 +44,10 @@
 }
 
 @media(max-width: 600px){
+    #hero .section h1 {
+        font-size: 3.4rem;
+    }
+    
     #report-data .section {
         flex-direction: column;
         gap: 3rem;

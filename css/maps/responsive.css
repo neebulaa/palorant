@@ -5,6 +5,7 @@
     #maps-slider .map-image {
         min-width: 90vw;
     }
+    
     .map-content {
         flex-direction: column;
         gap: 1rem;

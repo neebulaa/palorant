@@ -1,13 +1,4 @@
 /* hero section start */
-.large-text-bg {
-    font-size: 30rem;
-    color: var(--gray);
-    position: absolute;
-    left: 50%;
-    translate: -50%;
-    top: 30%;
-    z-index: -1000;
-}
 
 #hero {
     position: relative;

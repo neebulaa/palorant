@@ -1,0 +1,164 @@
+@media(max-width: 768px){
+    /* agent wardrobe section start */
+
+    #agent-wardrobe .large-agent-name {
+        font-size: 8.5rem;
+    }
+
+    #agent-wardrobe .section {
+        flex-direction: column;
+        padding-block: 4rem 2rem;
+    }
+
+    #agent-wardrobe .agent-wardrobe-selection{
+        align-self: center;
+    }
+
+    #agent-wardrobe .agent-selection-profiles {
+        --total-profile-in-row: 4;
+    }
+
+    #agent-wardrobe .agent-wardrobe-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #agent-wardrobe .agent-description {
+        margin-top: 4rem;
+        font-size: .9rem;
+        max-width: 250px;
+    }
+
+    #agent-wardrobe .agent-body {
+        max-width: 30rem;
+        bottom: 0;
+        height: initial;
+        left: 70%;
+        width: 100%;
+    }
+
+    #agent-wardrobe .agent-plate-stander::after {
+        background: var(--dim-white);
+        z-index: -1;
+        bottom: 0;
+    }
+
+    #agent-wardrobe .agent-plate-stander::before {
+        display: none;
+    }
+
+    #agent-wardrobe .agent-selection-profiles .agent-selection-profile {
+        height: 4.25rem;
+    }
+
+    #agent-wardrobe .agent-selection-profiles-slider-viewer .agent-selection-profiles-slide {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    /* agent wardrobe section end */
+
+    /* agent special abilities section start */
+    #agent-special-abilities .agent-special-abilities-icon .section {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #agent-special-abilities .agent-special-abilities-info .section {
+        align-items: center;
+    }
+
+    #agent-special-abilities .agent-special-abilities-info-video video {
+        height: 16.9375rem;
+    }
+
+    #agent-special-abilities .agent-special-abilities-info-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    #agent-special-abilities .agent-special-abilities-info-content .ability-description {
+        max-width: 40rem;
+    }
+
+    #agent-special-abilities .agent-special-abilities-icon .agent-abilities .agent-ability {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    #agent-special-abilities .agent-special-abilities-icon .agent-abilities .agent-ability .icon {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    #agent-special-abilities .agent-special-abilities-info .section {
+        padding-block: 2rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    /* agent special abilities section end */
+}
+
+@media(max-width: 650px){
+    /* agent wardrobe section start */
+    
+    #agent-wardrobe .large-agent-name {
+        display: none;
+    }
+
+    #agent-wardrobe .agent-description {
+        max-width: 250px;
+    }
+    /* agent wardrobe section end */
+}
+
+@media(max-width: 500px){
+    #agent-wardrobe .agent-selection-profiles .agent-selection-profile {
+        height: 4.25rem;
+        width: 5.25rem;
+    }
+
+    #agent-wardrobe .agent-selection-profiles-slider-viewer .agent-selection-profiles-slide {
+        gap: .5rem;
+    }
+
+    #agent-wardrobe .agent-selection-profiles {
+        max-width: calc(5.25rem * var(--total-profile-in-row) + .5rem * (var(--total-profile-in-row) - 1));
+    }
+
+    #agent-wardrobe .agent-description {
+        margin-top: 4rem;
+        font-size: .9rem;
+        max-width: 200px;
+    }
+
+    #agent-wardrobe .agent-selection-profiles {
+        --total-profile-in-row: 3;
+    }
+
+    #agent-wardrobe .agent-selection-profiles-slider-viewer .agent-selection-profiles-slide {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* agent special abilities section start */
+    #agent-special-abilities .agent-special-abilities-icon h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    #agent-special-abilities .agent-special-abilities-icon .agent-abilities {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    #agent-special-abilities .agent-special-abilities-icon .agent-abilities .agent-ability {
+        width: 5.5rem;
+        height: 5.5rem;
+        border-width: 3px;
+    }
+    
+    #agent-special-abilities .agent-special-abilities-icon .agent-abilities .agent-ability .icon {
+        width: 3rem;
+        height: 3rem;
+    }
+    /* agent special abilities section end */
+}

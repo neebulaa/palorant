@@ -38,14 +38,14 @@ function insertListenerToMapNavigator(){
         mapName.innerHTML = queue[0].name;
         mapDesc.innerHTML = queue[0].description;
 
-        addImagesSelectionGallery.innerHTML = queue[0]['additional-images'].map((img, i) => {
+        addImagesSelectionGallery.innerHTML = queue[0].additionalImages.map((img, i) => {
             return `
                 <div class="selection-gallery-image ${i == 0 ? 'active' : ''}">
                     <img src="${img}" alt="sunset-ss">
                 </div>
             `;
         }).join('');
-        addImagesSelectionPreviewImg.src = queue[0]['additional-images'][0];
+        addImagesSelectionPreviewImg.src = queue[0].additionalImages[0];
     });
     
     mapNavNext.addEventListener("click", function(){
@@ -56,14 +56,14 @@ function insertListenerToMapNavigator(){
         
         mapName.innerHTML = queue[0].name;
         mapDesc.innerHTML = queue[0].description;
-        addImagesSelectionGallery.innerHTML = queue[0]['additional-images'].map((img, i) => {
+        addImagesSelectionGallery.innerHTML = queue[0].additionalImages.map((img, i) => {
             return `
                 <div class="selection-gallery-image ${i == 0 ? 'active' : ''}">
                     <img src="${img}" alt="sunset-ss">
                 </div>
             `;
         }).join('');
-        addImagesSelectionPreviewImg.src = queue[0]['additional-images'][0];
+        addImagesSelectionPreviewImg.src = queue[0].additionalImages[0];
     });
     
     document.addEventListener("click", function(e){
@@ -82,14 +82,14 @@ export default async function MapSlider(images){
     mapImages.innerHTML = formatMapImages().join("");
     mapName.innerHTML = queue[0].name;
     mapDesc.innerHTML = queue[0].description;
-    addImagesSelectionGallery.innerHTML = queue[0]['additional-images'].map((img, i) => {
+    addImagesSelectionGallery.innerHTML = queue[0].additionalImages.map((img, i) => {
         return `
             <div class="selection-gallery-image ${i == 0 ? 'active' : ''}">
                 <img src="${img}" alt="sunset-ss">
             </div>
         `;
     }).join('');
-    addImagesSelectionPreviewImg.src = queue[0]['additional-images'][0];
+    addImagesSelectionPreviewImg.src = queue[0].additionalImages[0];
 
     insertListenerToMapNavigator();
     return images;

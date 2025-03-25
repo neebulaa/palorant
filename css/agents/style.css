@@ -1,0 +1,362 @@
+/* agent wardrobe section start */
+#transition-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--gray);
+    z-index: 100;
+    display: none;
+}
+
+#transition-page.show {
+    display: block;
+}
+
+#agent-wardrobe {
+    --agent-color: #FEBF66;
+    min-height: min(100dvh, 800px);
+    position: relative;
+    height: 1px;
+}
+
+#agent-wardrobe::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    translate: -50%;
+    width: 100%;
+    height: 100px;
+    rotate: -45deg;
+    background: var(--agent-color); 
+    z-index: -1;
+}
+
+#agent-wardrobe .agent-plate-stander {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#agent-wardrobe .agent-plate-stander::after {
+    content: '';
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    background: url('../../assets/images/agents/agent-description-bg.png');
+    width: 100%;
+    height: 8rem;
+    z-index: -10;
+}
+
+#agent-wardrobe .agent-plate-stander::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: var(--agent-color);
+    width: 100%;
+    height: 9rem;
+    z-index: -10;
+}
+
+#agent-wardrobe .section{
+    position: relative;
+    padding-block: 4rem 6rem;
+    display: flex;
+    height: 100%;
+    /* min-height: min(100dvh, 800px); */
+    justify-content: space-between;
+}
+
+
+#agent-wardrobe .agent-name {
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+#agent-wardrobe .agent-signature-saying {
+    margin-top: .5rem;
+    font-weight: 900;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+#agent-wardrobe .agent-role {
+    margin-top: 2rem;
+    min-width: 13.75rem;
+    border-radius: 1000rem;
+    background: var(--primary);
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    align-items: center;
+    gap: .625rem;
+    color: var(--black);
+    border: 3px solid var(--black);
+    padding: .625rem 1.5rem;
+    font-weight: bold;
+    font-size: 1.125rem;
+    max-width: max-content;
+}
+
+#agent-wardrobe .agent-role .icon {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+#agent-wardrobe .agent-description {
+    margin-top: 3rem;
+    max-width: 280px;
+    color: var(--white);
+    padding: 1.875rem 2.5rem 1.875rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+#agent-wardrobe .agent-description::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('../../assets/images/agents/agent-description-bg.png');
+    width: 1000%;
+    height: 100%;
+    z-index: -1;
+}
+
+#agent-wardrobe .agent-description::before {
+    content: '';
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: var(--agent-color);
+    width: 1000%;
+    height: 100%;
+    z-index: -3;
+}
+
+#agent-wardrobe .agent-body {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    translate: -50%;
+    height: 90%;
+    max-width: 32.5rem;
+    z-index: -1;
+}
+
+#agent-wardrobe .large-agent-name {
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    translate: 10%;
+    font-size: 12.5rem;
+    text-transform: uppercase;
+    z-index: -11;
+}
+
+#agent-wardrobe .large-agent-name::after {
+    content: "";
+    position: absolute;
+    left: 40%;
+    height: 100%;
+    width: 10000%;
+    background: var(--agent-color);
+    z-index: -1;
+}
+
+#agent-wardrobe .agent-wardrobe-selection {
+    align-self: flex-end;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+#agent-wardrobe .agent-selection-profiles .agent-selection-profile {
+    aspect-ratio: 1;
+    width: 6.25rem;
+    height: 6.25rem;
+    border: 3px solid var(--black);
+    border-bottom-right-radius: 1.25rem;
+    overflow: hidden;
+    background: var(--primary);
+    filter: grayscale(1);
+    cursor: pointer;
+}
+
+#agent-wardrobe .agent-selection-profiles .agent-selection-profile:not(.active):hover {
+    background: var(--primary);
+    filter: grayscale(.4);
+}
+
+#agent-wardrobe .agent-selection-profiles .agent-selection-profile:not(.active):hover img {
+    scale: 1.1;
+}
+
+#agent-wardrobe .agent-selection-profiles .agent-selection-profile img {
+    transition: .3s;
+    user-select: none;
+    pointer-events: none;
+}
+
+#agent-wardrobe .agent-selection-profiles .agent-selection-profile.active {
+    background: var(--agent-color);
+    filter: grayscale(0);
+}
+
+#agent-wardrobe .agent-selection-profiles {
+    --total-profile-in-row : 2;
+    max-width: calc(6.25rem * var(--total-profile-in-row) + .85rem * (var(--total-profile-in-row) - 1));
+    overflow: hidden;
+}
+
+#agent-wardrobe .agent-selection-profiles-slider-viewer {
+    display: flex;
+    transition: .3s;
+}
+
+#agent-wardrobe .agent-selection-profiles-slider-viewer .agent-selection-profiles-slide {
+    flex: 1 0 100%;
+    display: grid;
+    gap: .85rem;
+    grid-template-columns: repeat(var(--total-profile-in-row), 1fr);
+}
+
+#agent-wardrobe .btn-agent-wardrobe-selection-navigator {
+    border: none;
+    background: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+#agent-wardrobe .btn-agent-wardrobe-selection-navigator .icon {
+    width: 4rem;
+    height: 3.5rem;
+}
+
+#agent-wardrobe .btn-agent-wardrobe-selection-navigator:first-child {
+    animation: moveLeft .5s infinite alternate;
+}
+
+#agent-wardrobe .btn-agent-wardrobe-selection-navigator:last-child {
+    animation: moveRight .5s infinite alternate;
+}
+
+#agent-wardrobe .btn-agent-wardrobe-selection-navigator:hover {
+    background: var(--gray);
+    border: 1px solid var(--light-gray);
+}
+
+#agent-wardrobe:has(.btn-agent-wardrobe-selection-navigator:hover) .btn-agent-wardrobe-selection-navigator{
+    animation-play-state: paused;
+}
+
+@keyframes moveRight {
+    0%{
+        translate: 0;
+    }
+    100%{
+        translate: .5rem;
+    }
+}
+
+@keyframes moveLeft {
+    0%{
+        translate: 0;
+    }
+    100%{
+        translate: -.5rem;
+    }
+}
+
+/* agent wardrobe section end */
+
+/* agent special abilities section start */
+#agent-special-abilities .agent-special-abilities-icon {
+    background: url('../../assets/images/agents/agent-description-bg.png');
+}
+
+#agent-special-abilities .agent-special-abilities-icon .section {
+    padding-block: 2rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#agent-special-abilities .agent-special-abilities-icon h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+#agent-special-abilities .agent-special-abilities-icon .agent-abilities {
+    display: flex; 
+    gap: 2rem;
+}
+
+#agent-special-abilities .agent-special-abilities-icon .agent-abilities .agent-ability {
+    border-radius: 1000rem;
+    border: 5px solid var(--black);
+    background: var(--black);
+    opacity: .6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6.25rem;
+    height: 6.25rem;
+    cursor: pointer;
+}
+
+#agent-special-abilities .agent-special-abilities-icon .agent-abilities .agent-ability .icon {
+    width: 3.75rem;
+    height: 3.75rem;
+}
+
+#agent-special-abilities .agent-special-abilities-icon .agent-abilities .agent-ability.active {
+    opacity: 1;
+    border-color: var(--primary);
+}
+
+#agent-special-abilities .agent-special-abilities-icon .agent-abilities .agent-ability:not(.active):hover{
+    border-color: var(--light-gray);
+}
+
+#agent-special-abilities .agent-special-abilities-info .section {
+    padding-block: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+#agent-special-abilities .agent-special-abilities-info .section > * {
+    flex :1;
+}
+
+#agent-special-abilities .agent-special-abilities-info-video video {
+    background: var(--gray);
+    height: 20.9375rem;
+    width: 100%;
+    border: 1px solid var(--black);
+    border-radius: .625rem;
+}
+
+#agent-special-abilities .agent-special-abilities-info .agent-special-abilities-info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#agent-special-abilities .agent-special-abilities-info-content h3 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+#agent-special-abilities .agent-special-abilities-info-content button {
+    margin-top: auto;
+}
+
+/* agent special abilities section end */

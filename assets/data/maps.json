@@ -3,7 +3,7 @@
         "name" : "SUNSET",
         "description" : "A disaster at a local kingdom facility threatens to engulf the whole neighborhood. Stop at your favorite food truck then fight across the city in this traditional three lane map.",
         "thumb" : "./assets/images/maps/sunset/sunset-bg.png",
-        "additional-images" : [
+        "additionalImages" : [
             "./assets/images/maps/sunset/sunset-map.jpg",
             "./assets/images/maps/sunset/sunset-ss1.jpg",
             "./assets/images/maps/sunset/sunset-ss2.png",
@@ -20,7 +20,7 @@
         "name" : "LOTUS",
         "description" : "A mysterious structure located at an astral channel, radiating ancient power. Massive stone doors offer many movement opportunities and open pathways to three enigmatic sites.",
         "thumb" : "./assets/images/maps/lotus/lotus-bg.jpg",
-        "additional-images" : [
+        "additionalImages" : [
             "./assets/images/maps/lotus/lotus-map.jpg",
             "./assets/images/maps/lotus/lotus-ss1.jpg",
             "./assets/images/maps/lotus/lotus-ss2.jpg",
@@ -33,7 +33,7 @@
         "name" : "PEARL",
         "description" : "The Attacking Team pushes into the Defending Team’s area across two sites on a vibrant underwater city map. Pearl is a geography-based map with no special mechanics. Engage in action through the dense mid-lane or take the longer side routes in the first map set in Omega Earth.",
         "thumb" : "./assets/images/maps/pearl/pearl-bg.jpg",
-        "additional-images" : [
+        "additionalImages" : [
             "./assets/images/maps/pearl/pearl-map.jpg",
             "./assets/images/maps/pearl/pearl-ss1.jpg",
             "./assets/images/maps/pearl/pearl-ss2.jpg",
@@ -48,7 +48,7 @@
         "name" : "FRACTURE",
         "description" : "A top-secret research facility was completely destroyed by a failed radianite experiment. With divided defensive options like the map itself, the choice is yours: confront the attackers in their own territory or brace yourself for the assault.",
         "thumb" : "./assets/images/maps/fracture/fracture-bg.jpg",
-        "additional-images" : [
+        "additionalImages" : [
             "./assets/images/maps/fracture/fracture-map.jpg",
             "./assets/images/maps/fracture/fracture-ss1.jpg",
             "./assets/images/maps/fracture/fracture-ss2.jpg",
@@ -64,7 +64,7 @@
         "name" : "ICE BOX",
         "description" : "Your next battlefield is Kingdom's secret excavation site, shrouded in Arctic ice. The two factory sites, protected by snow and metal, require horizontal skill. Utilize the zipline, and your enemies won't see you coming.",
         "thumb" : "./assets/images/maps/icebox/icebox-bg.jpg",
-        "additional-images" : [
+        "additionalImages" : [
             "./assets/images/maps/icebox/icebox-map.jpg",
             "./assets/images/maps/icebox/icebox-ss1.jpg",
             "./assets/images/maps/icebox/icebox-ss2.jpg",

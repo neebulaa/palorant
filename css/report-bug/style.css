@@ -1,0 +1,226 @@
+/* hero section start */
+.large-text-bg {
+    font-size: 30rem;
+    color: var(--gray);
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    top: 30%;
+    z-index: -1000;
+}
+
+#hero {
+    position: relative;
+    z-index: 1;
+    min-height: min(70dvh, 800px);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#hero .section {
+    padding-block: 4rem;   
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#hero .section > * {
+    flex: 1;
+}
+
+#hero .section h1 {
+    font-size: 4rem;
+}
+
+#hero .section .hero-left {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+#hero .section .hero-right:is(.blinking) {
+    filter: grayscale(1);
+    opacity: .5;
+    animation: blink 2s infinite alternate;
+}
+
+@keyframes blink {
+    0% {
+        filter: grayscale(1);
+        opacity: 0.4;
+    }
+    20% {
+        filter: grayscale(0.7);
+        opacity: 0.75;
+    }
+    40% {
+        filter: grayscale(0.5);
+        opacity: 0.6;
+    }
+    60% {
+        filter: grayscale(0.8);
+        opacity: 0.9;
+    }
+    80% {
+        filter: grayscale(0.5);
+        opacity: 0.7;
+    }
+    100% {
+        filter: grayscale(1);
+        opacity: 0.5;
+    }
+}
+/* hero section end */
+
+/* report data section start */
+#report-data {
+    background: url('../../assets/images/section-highlighter-header-bg.png');
+    color: var(--white);
+    min-height: 13.4375rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background-size: cover;
+}
+
+#report-data .section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#report-data .section .report-data-content h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#report-data .section .report-data-content p {
+    font-size: 1.2rem;
+}
+
+#report-data .section .report-data-info {
+    display: flex;
+    gap: 3rem;
+}
+
+#report-data .section .report-data-info-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#report-data .section .report-data-info-card h3 {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+#report-data .section .report-data-info-card p {
+    font-size: 1.2rem;
+}
+
+#report-data .section .report-data-info-card-danger h3 {
+    color: var(--red);
+}
+
+#report-data .section .report-data-info-card-primary h3 {
+    color: var(--primary);
+}
+/* report data section end */
+
+
+/* report form section start */
+#report-form {
+    padding-block: 4rem;
+}
+
+#report-form h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#report-form .report-form-splitter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 4rem;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+}
+
+.form-input label {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.form-input p.form-input-desc {
+    font-size: 0.875rem;
+    color: var(--super-light-black);
+}
+
+.form-input input, textarea, select {
+    padding: .625rem;
+    background: transparent;
+    resize: none;
+    font-family: inherit;
+    outline: none;
+    
+    border: 1px solid var(--super-light-black);
+    font-size: 1rem;
+}
+
+textarea {
+    min-height: 180px;
+}
+
+.form-input input::placeholder {
+    color: var(--dark-gray);
+}
+
+.form-input .file-input {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    padding: .625rem;
+    border: 1px solid var(--super-light-black);
+    max-width: max-content;
+    cursor: pointer;
+    transition: .2s;
+    font-size: 1rem;
+}
+
+.form-input .file-input:hover {
+    background: var(--white);
+}
+
+.form-input .file-input .icon {
+    width: 20px;
+}
+
+.form-input input[type='file'] {
+    display: none;
+}
+
+.form-buttons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-buttons .btn.reset {
+    background: transparent;
+}
+
+.error-message {
+    display: none;
+    color: red;
+}
+/* report form section end */

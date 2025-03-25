@@ -1,0 +1,81 @@
+@media(max-width: 768px){
+    /* hero section start */
+    #hero .section {
+        flex-direction: column;
+    }
+    
+    #hero .section .hero-left {
+        order: 1;
+        max-width: 500px;
+        max-height: max-content;
+        align-items: center;
+    }
+    /* hero section end */
+
+    /* report data section start */
+    #report-data {
+        min-height: 11.725rem;
+    }
+
+    #report-data .section .report-data-content p {
+        font-size: 1.25rem;
+    }
+
+    #report-data .section .report-data-content h2 {
+        font-size: 2.5rem;
+    }
+
+    #report-data .section .report-data-info-card h3 {
+        font-size: 3.5rem;
+    }
+
+    #report-data .section .report-data-info-card p {
+        font-size: 1.25rem;
+    }
+    /* report data section end*/
+
+    /* report form section start */
+    #report-form .report-form-splitter {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem 0rem;
+    }
+    /* report form section end */
+}
+
+@media(max-width: 600px){
+    #report-data .section {
+        flex-direction: column;
+        gap: 3rem;
+        padding-block: 2rem;
+    }
+
+    #report-data .section .report-data-content p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #report-data .section .report-data-content h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #report-data .section .report-data-info-card h3 {
+        font-size: 2.85rem;
+    }
+
+    #report-data .section .report-data-info-card p {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 360px){
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    .form-buttons .btn {
+        width: 100%;
+        justify-content: center;
+        max-width: 100%;
+    }
+}

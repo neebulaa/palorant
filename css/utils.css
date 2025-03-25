@@ -9,12 +9,14 @@
     --white: #ffffff;
     --dim-white: #EFEFEF;
     --gray: #E0E0E0;
-    --dark-gray: #A6A6A6;
+    --light-gray: #A6A6A6;
+    --dark-gray: #868686;
     --primary: #D7FA00;
     --black: #000000;
     --dim-black: #111111;
     --light-black: #222222;
     --super-light-black: #444444;
+    --red: #FF5353;
 }
 
 html {
@@ -287,9 +289,13 @@ body {
 #contact-us .social-medias .icon {
     width: 3.75rem; /* 60px */
     height: 3.75rem;
-    color: var(--dark-gray);
+    color: var(--light-gray);
+    transition: .3s;
 }
 
+#contact-us .social-medias .icon:hover {
+    color: var(--white);
+}
 
 /* contact us section end */
 
@@ -313,7 +319,7 @@ body {
 #footer p {
     max-width: 900px;
     text-align: center;
-    color: var(--dark-gray);
+    color: var(--light-gray);
 }
 
 #footer .footer-links ul{
@@ -355,6 +361,7 @@ body {
     position: relative;
     z-index: 1;
     overflow: hidden;
+    background-size: cover;
 }
 
 .section-highlighter-header::before {
@@ -422,6 +429,7 @@ ul, ol, li {
 }
 
 .btn {
+    font-family: "Open Sans", system-ui;
     appearance: none;
     border: none;
     outline: none;
@@ -550,6 +558,10 @@ ul, ol, li {
 
 .game-additional-image {
     height: 6.25rem; /* 100px */
+}
+
+.accent-color {
+    color: var(--red);
 }
 
 @media(max-width: 768px){

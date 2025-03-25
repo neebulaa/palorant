@@ -1,6 +1,10 @@
 const BASE_URL = "/";
 // example https://neebulaa.github.io/palorant/
 
+export function getUrl(url){
+    return BASE_URL + url;
+}
+
 export async function delay(ms){
     return new Promise((resolve, reject) => {
         setTimeout(() => {

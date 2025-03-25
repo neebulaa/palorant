@@ -15,6 +15,8 @@ export default async function Navbar(){
         fileName =  "news";
     }else if(fileName == ""){
         fileName = "index";
+    }else if(fileName == "report-success"){
+        fileName = "report-bug";
     }
     
     const currentActive = document.querySelector('.navlink-active');

@@ -1,0 +1,143 @@
+/* map slider section start */
+#maps-slider{
+    padding-block: 2rem;
+}
+
+#maps-slider .section{
+    padding-block: 2rem;
+}
+
+#maps-slider .map-images-viewer {
+    position: relative;
+    height: 26.5625rem;
+}
+
+#maps-slider .map-images {
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    height: 100%;
+    transition: .3s;
+}
+
+#maps-slider .map-image {
+    min-width: 80vw;
+    border: 2px solid var(--black);
+    transform: skew(5deg);
+}
+
+.map-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.map-content .map-name {
+    white-space: nowrap;
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+
+.map-content .map-description {
+    max-width: 43.75rem;
+} 
+
+.map-navigator {
+    margin-left: auto;
+    display: flex;
+    gap: .625rem;
+}
+
+.map-navigator .btn-map-navigator {
+    padding: .3125rem .625rem;
+    border: 1px solid var(--black);
+    min-width: 5rem;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.map-navigator .btn-map-navigator:hover {
+    opacity: .6;
+}
+
+.map-navigator .btn-map-navigator:first-child {
+    border-top-left-radius: .625rem; 
+}
+
+.map-navigator .btn-map-navigator:last-child {
+    border-bottom-right-radius: .625rem; 
+}
+
+.map-navigator .btn-map-navigator:first-child > .icon {
+    rotate: 180deg;
+}
+
+/* map slider section end */
+
+
+/* map additional images section start */
+#maps-additional-images {
+    background: url("../../assets/images/maps/maps-additional-image-bg.png");
+    color: white;
+}
+
+#maps-additional-images .section {
+    padding-block: 4rem;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.additional-images-gallery {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.selection-gallery {
+    max-width: 10rem;
+    flex: 1 0 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    max-height: 28.4375rem;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--light-black) var(--light-gray);
+}
+
+.selection-gallery-image {
+    width: 100%;
+    height: 5rem;
+    cursor: pointer;
+    border: 2px solid var(--super-light-black);
+}
+
+.selection-gallery-image img {
+    pointer-events: none;
+    user-select: none;
+}
+
+.selection-gallery-image.active {
+    border: 3px solid var(--primary);
+}
+
+.selection-preview {
+    user-select: none;
+    flex: 1;
+    max-height: 28.4375rem;
+    background: var(--super-light-black);
+}
+
+.selection-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+/* map additional images section end */

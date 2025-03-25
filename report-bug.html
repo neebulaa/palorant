@@ -3,16 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palorant - News Page</title>
-    <link rel="stylesheet" href="./css/news/style.css">
+    <title>Palorant - Report Bug Page</title>
+    <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/utils.css">
-    <link rel="stylesheet" href="./css/news/responsive.css">
+    <link rel="stylesheet" href="./css/report-bug/style.css">
+    <link rel="stylesheet" href="./css/report-bug/responsive.css">
     <script src="./js/Main.js" type="module"></script>
 </head>
 <body>
     <nav id="navbar"></nav>
-    <h1>aewrewr</h1>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section id="hero">
+        <div class="section">
+            <h2 class="large-text-bg">AIDS</h2>
+            <section class="hero-left">
+                <h1 class="impacted">ENCOUNTERING A BUG?</h1>
+                <p>Let us know about the issue, and our team will work on resolving it as quickly as possible to ensure a seamless experience for you!</p>
+                <a href="#report-form">
+                    <button class="btn btn-basic">
+                        Report Now
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M11 4V16.17L5.41 10.58L4 12L12 20L20 12L18.59 10.59L13 16.17V4H11Z" fill="currentColor"/>
+                            </svg>
+                        </span>
+                    </button>
+                </a>
+            </section>
+            <section class="hero-right blinking">
+                <div class="hero-right-image">
+                    <img src="./assets/images/logo/logo-fit.png" alt="logo fit">
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section id="report-data">
+        <div class="section">
+            <div class="report-data-content">
+                <h2>Since 2016</h2>
+                <p>We keep on changing</p>
+            </div>
+
+            <div class="report-data-info">
+                <div class="report-data-info-card report-data-info-card-danger">
+                    <h3>221</h3>
+                    <p>Bugs Reported</p>
+                </div>
+                <div class="report-data-info-card report-data-info-card-primary">
+                    <h3>219</h3>
+                    <p>Bugs Solved</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="report-form">
+        <div class="section">
+            <h2 class="impacted">Let us Know - Your Help Matters!</h2>
+            
+            <form action="" id="report-form-form">
+                <div class="report-form-splitter">
+                    <div class="form-input">
+                        <label for="username">Username <span class="accent-color">*</span></label>
+                        <p class="form-input-desc">Hey tell me who you are.</p>
+                        <input type="text" id="username" placeholder="Your Username" class="required">
+                        <p class="error-message"></p>
+                    </div>
+                    <div class="form-input">
+                        <label for="server">Server <span class="accent-color">*</span></label>
+                        <p class="form-input-desc">Tell us where are the bugs at.</p>
+                        
+                        <select id="server" class="required">
+                            <option value="">- Choose Your Server -</option>
+                            <option value="america">America</option>
+                            <option value="europe">Europe</option>
+                            <option value="asia">Asia</option>
+                            <option value="twhkmo">TW, HK, MO</option>
+                        </select>
+                        <p class="error-message"></p>
+                    </div>
+                    <div class="form-input">
+                        <label for="email">Email <span class="accent-color">*</span></label>
+                        <p class="form-input-desc">We need your email so we can thankyou later and give you some credit (only for <b>@gmail.com</b>, <b>@ppti22.id</b>, and <b>@hci.co</b> domain).</p>
+                        <input type="email" id="email" placeholder="youremail@gmail.com" class="required">
+                        <p class="error-message"></p>
+                    </div>
+                    <div class="form-input">
+                        <label for="file">Attach File <span class="accent-color">*</span></label>
+                        <p class="form-input-desc">Include screenshots, screen recordings, or other relevant files that demonstrate the bug. Visual aids can make it easier for developers to grasp the issue.</p>
+                        <label for="file" class="file-input">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M13 9V3.5L18.5 9M6 2C4.89 2 4 2.89 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2H6Z" fill="black"/>
+                                </svg>
+                            </span>
+                            <p>Upload Files</p>
+                        </label>
+                        <input type="file" id="file" class="required">
+                        <p class="error-message"></p>
+                    </div>
+                    <div class="form-input">
+                        <label for="description">Help us understand about the bug <span class="accent-color">*</span></label>
+                        <p class="form-input-desc">Give a thorough explanation of the bug, outlining the steps to reproduce it, the expected outcome, and the actual result. </p>
+                        <textarea id="description" placeholder="Your text here..." class="required"></textarea>
+                        <p class="error-message"></p>
+                    </div>
+                    <div class="form-input">
+                        <label for="additional-information">Additional Information</label>
+                        <p class="form-input-desc">Provide any extra details that could assist in fixing the bug, such as error logs, console messages, or relevant URLs.</p>
+                        <textarea id="additional-information" placeholder="Your text here..."></textarea>
+                        <p class="error-message"></p>
+                    </div>
+                </div>
+
+                <div class="form-buttons">
+                    <button class="btn btn-basic reset" type="reset">
+                        Clear Form
+    
+                        <span class="icon">
+    
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 20C9.76667 20 7.875 19.225 6.325 17.675C4.775 16.125 4 14.2333 4 12C4 9.76667 4.775 7.875 6.325 6.325C7.875 4.775 9.76667 4 12 4C13.15 4 14.25 4.23733 15.3 4.712C16.35 5.18667 17.25 5.866 18 6.75V4H20V11H13V9H17.2C16.6667 8.06667 15.9377 7.33333 15.013 6.8C14.0883 6.26667 13.084 6 12 6C10.3333 6 8.91667 6.58333 7.75 7.75C6.58333 8.91667 6 10.3333 6 12C6 13.6667 6.58333 15.0833 7.75 16.25C8.91667 17.4167 10.3333 18 12 18C13.2833 18 14.4417 17.6333 15.475 16.9C16.5083 16.1667 17.2333 15.2 17.65 14H19.75C19.2833 15.7667 18.3333 17.2083 16.9 18.325C15.4667 19.4417 13.8333 20 12 20Z" fill="currentColor"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="btn btn-basic submit">
+                        Report Bug
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="currentColor">
+                                <path d="M15.59 7H9.5V6H18.5V15H17.5V8.91V7.70289L16.6464 8.55645L6.41 18.7929L5.70711 18.09L15.9436 7.85355L16.7971 7H15.59Z" fill="currentColor" stroke="currentColor"/>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+</section>
+
     <section id="contact-us"></section>
     <footer id="footer"></footer>
 </body>

@@ -19,6 +19,7 @@
     min-height: min(100dvh, 800px);
     position: relative;
     height: 1px;
+    overflow: hidden;
 }
 
 #agent-wardrobe::before {

@@ -1,6 +1,7 @@
 /* map slider section start */
 #maps-slider{
     padding-block: 2rem;
+    overflow-x: hidden;
 }
 
 #maps-slider .section{

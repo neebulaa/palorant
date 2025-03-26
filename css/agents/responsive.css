@@ -40,7 +40,7 @@
         max-width: 30rem;
         bottom: 0;
         height: initial;
-        left: 70%;
+        left: 60%;
         width: 100%;
     }
 
@@ -113,6 +113,10 @@
 
     #agent-wardrobe .agent-description {
         max-width: 250px;
+    }
+
+    #agent-wardrobe .agent-body {
+        left: 70%;
     }
     /* agent wardrobe section end */
 }

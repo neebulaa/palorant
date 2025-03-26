@@ -106,25 +106,25 @@ function insertListener(agents){
 
 function checkScreenSize(agents){
     const currentWidth = window.innerWidth;
-    if ((previousWindowWidth < 500 && currentWidth >= 500 && currentWidth < 768) || (currentWidth >= 500 && currentWidth < 768)) {
-        // <500px to 500-767px
+    if ((previousWindowWidth < 500 && currentWidth > 500 && currentWidth <= 768) || (currentWidth > 500 && currentWidth <= 768)) {
+        // <500px to 501-768px
         previousWindowWidth = currentWidth;
         agentProfilePerSlider = 4;
         resizeWardrobeSelection(agents);
     } 
-    else if ((previousWindowWidth < 768 && currentWidth >= 768) || currentWidth >= 768) {
-        //<768px to >=768px
+    else if ((previousWindowWidth < 768 && currentWidth > 768) || currentWidth > 768) {
+        //<768px to >768px
         previousWindowWidth = currentWidth;
         agentProfilePerSlider = 6;
         resizeWardrobeSelection(agents);
     } 
-    else if ((previousWindowWidth >= 768 && currentWidth < 768 && currentWidth >= 500)) {
-        // >=768px to 500-767px
+    else if ((previousWindowWidth > 768 && currentWidth < 768 && currentWidth >= 500)) {
+        // > 768px to 500-767px
         previousWindowWidth = currentWidth;
         agentProfilePerSlider = 4;
         resizeWardrobeSelection(agents);
     } 
-    else if ((previousWindowWidth >= 500 && currentWidth < 500) || currentWidth < 500) {
+    else if ((previousWindowWidth > 500 && currentWidth <= 500) || currentWidth <= 500) {
         // >=500px to <500px
         previousWindowWidth = currentWidth;
         agentProfilePerSlider = 3;

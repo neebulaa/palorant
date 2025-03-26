@@ -104,7 +104,9 @@ function insertListener(agents){
     insertClickEventToAgentProfile();
 
     window.addEventListener('resize', function(){
-        checkScreenSize(agents);
+        if (window.innerWidth !== previousWindowWidth) {
+            checkScreenSize(agents);
+        }
     });
 }
 

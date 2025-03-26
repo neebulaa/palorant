@@ -82,7 +82,7 @@
         "name" : "Sage",
         "slug" : "sage",
         "description" : "The stronghold of China, Sage creates safety for herself and her team wherever she goes. Able to revive fallen friends and stave off aggressive pushes, she provides a calm center to a hellish fight.",
-        "signatureSaying" : "Lets Go, Off your feet!",
+        "signatureSaying" : "I am the shield, you are the sword.",
         "image" : "./assets/images/agent-images/sage.png",
         "profile" : "./assets/images/agent-images/profile/sage.png",
         "role" : {
@@ -121,7 +121,7 @@
         "name" : "Reyna",
         "slug" : "reyna",
         "description" : "Forged in the heart of Mexico, Reyna dominates single combat, popping off with each kill she scores. Her capability is only limited by her raw skill, making her highly dependent on performance.",
-        "signatureSaying" : "Lets Go, Off your feet!",
+        "signatureSaying" : "They will cower!",
         "image" : "./assets/images/agent-images/reyna.png",
         "profile" : "./assets/images/agent-images/profile/reyna.png",
         "role" : {
@@ -199,7 +199,7 @@
         "name" : "Jett",
         "slug" : "jett",
         "description" : "Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.",
-        "signatureSaying" : "Lets Go, Off your feet!",
+        "signatureSaying" : "Watch this!",
         "image" : "./assets/images/agent-images/jett.png",
         "profile" : "./assets/images/agent-images/profile/jett.png",
         "role" : {
@@ -238,7 +238,7 @@
         "name" : "Omen",
         "slug" : "omen",
         "description" : "A phantom of a memory, Omen hunts in the shadows. He renders enemies blind, teleports across the field, then lets paranoia take hold as his foe scrambles to learn where he might strike next.",
-        "signatureSaying" : "Lets Go, Off your feet!",
+        "signatureSaying" : "I am everywhere.",
         "image" : "./assets/images/agent-images/omen.png",
         "profile" : "./assets/images/agent-images/profile/omen.png",
         "role" : {
@@ -277,7 +277,7 @@
         "name" : "Raze",
         "slug" : "raze",
         "description" : "Raze explodes out of Brazil with her big personality and big guns. With her blunt-force-trauma playstyle, she excels at flushing entrenched enemies and clearing tight spaces with a generous dose of 'boom.'",
-        "signatureSaying" : "Lets Go, Off your feet!",
+        "signatureSaying" : "Fire in the hole!",
         "image" : "./assets/images/agent-images/raze.png",
         "profile" : "./assets/images/agent-images/profile/raze.png",
         "role" : {
@@ -315,6 +315,7 @@
         "agentColor" : "#e1c4a8",
         "name" : "Sova",
         "slug" : "sova",
+        "signatureSaying" : "If you want to win, I’ll lead the way.",
         "description" : "Born from the eternal winter of Russia's tundra, Sova tracks, finds, and eliminates enemies with ruthless efficiency and precision. His custom bow and incredible scouting abilities ensure that even if you run, you cannot hide.",
         "image" : "./assets/images/agent-images/sova.png",
         "profile" : "./assets/images/agent-images/profile/sova.png",
@@ -353,6 +354,7 @@
         "agentColor" : "#09d13b",
         "name" : "Viper",
         "slug" : "viper",
+        "signatureSaying" : "No one can hold their breath forever.",
         "description" : "The American Chemist, Viper deploys an array of poisonous chemical devices to control the battlefield and choke the enemy's vision. If the toxins don't kill her prey, her mindgames surely will.",
         "image" : "./assets/images/agent-images/viper.png",
         "profile" : "./assets/images/agent-images/profile/viper.png",

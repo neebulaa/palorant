@@ -203,6 +203,7 @@ export default async function AgentWardrobe(agents){
     abilityName.textContent = agents[0].specialAbilities[0].name;
     abilityDesc.textContent = agents[0].specialAbilities[0].description;
     abilityVideo.src = agents[0].specialAbilities[0].video;
+    console.log(agents[0].specialAbilities[0].video)
 
     checkScreenSize(agents);
     insertListener(agents);

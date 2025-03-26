@@ -1,13 +1,12 @@
+const form = document.querySelector("#report-form-form");
+const fileInput = document.querySelector("#file");
+const emailInput = document.querySelector("#email");
+const descriptionInput = document.querySelector("#description");
+const additionalInfoInput = document.querySelector("#additional-information");
+const usernameInput = document.querySelector("#username");
+const serverInput = document.querySelector("#server");
+const fileLabel = document.querySelector('.file-label');
 export function ReportBug(){
-
-    const form = document.querySelector("#report-form-form");
-    const fileInput = document.querySelector("#file");
-    const emailInput = document.querySelector("#email");
-    const descriptionInput = document.querySelector("#description");
-    const additionalInfoInput = document.querySelector("#additional-information");
-    const usernameInput = document.querySelector("#username");
-    const serverInput = document.querySelector("#server");
-
     form.addEventListener("submit", function(e){
         e.preventDefault();
 
@@ -49,7 +48,10 @@ export function ReportBug(){
         }
         
         // validate file criteria (size and type)
-        if(fileInput.classList.contains("required") && fileInput.files[0] != null && !validFile(fileInput));
+        if(fileInput.classList.contains("required") && fileInput.files[0] != null && !validFile(fileInput)){
+            fileInput.value = '';
+            fileLabel.textContent = "Upload Files";
+        };
 
         // validate description at least 5 characters
         if(descriptionInput.classList.contains("required") && descriptionInput.value != '' && descriptionInput.value.length < 5){
@@ -78,10 +80,17 @@ export function ReportBug(){
 
         window.location.href = "./report-success.html";
     });
+    fileInput.addEventListener('change', function(){
+        const file = fileInput.files[0];
+        fileLabel.textContent = file.name;
+    });
 }
+
 
 function validFile(fileInput){
     const file = fileInput.files[0];
+    fileLabel.textContent = file.name;
+
     // validate file size
     const maxFileSize = 2 * 1024 * 1024; 
     if (file.size > maxFileSize) {

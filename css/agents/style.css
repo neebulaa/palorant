@@ -226,6 +226,7 @@
     display: grid;
     gap: .85rem;
     grid-template-columns: repeat(var(--total-profile-in-row), 1fr);
+    align-content: center;
 }
 
 #agent-wardrobe .btn-agent-wardrobe-selection-navigator {
@@ -255,24 +256,6 @@
 
 #agent-wardrobe:has(.btn-agent-wardrobe-selection-navigator:hover) .btn-agent-wardrobe-selection-navigator{
     animation-play-state: paused;
-}
-
-@keyframes moveRight {
-    0%{
-        translate: 0;
-    }
-    100%{
-        translate: .5rem;
-    }
-}
-
-@keyframes moveLeft {
-    0%{
-        translate: 0;
-    }
-    100%{
-        translate: -.5rem;
-    }
 }
 
 /* agent wardrobe section end */

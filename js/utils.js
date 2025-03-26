@@ -1,4 +1,5 @@
-const BASE_URL = "https://neebulaa.github.io/palorant/";
+// const BASE_URL = "https://neebulaa.github.io/palorant/";
+const BASE_URL = "/";
 // example https://neebulaa.github.io/palorant/
 
 export function getUrl(url){

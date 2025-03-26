@@ -59,19 +59,7 @@ function changeAgentInfo(agentData){
     abilityVideo.src = agentData.specialAbilities[0].video;
 }
 
-function insertListener(agents){
-    leftButtonWardrobe.addEventListener('click', function(){
-        if(currentActiveSlide <= 0) return;
-        currentActiveSlide -= 1;
-        agentWardrobeProfilesViewer.style.translate = currentActiveSlide * -100 + '%';
-    });
-
-    rightButtonWardrobe.addEventListener('click', function(){
-        if(currentActiveSlide >= totalSlide - 1) return;
-        currentActiveSlide += 1;
-        agentWardrobeProfilesViewer.style.translate = currentActiveSlide * -100 + '%';
-    });
-
+function insertClickEventToAgentProfile(agents){
     const agentProfiles = document.querySelectorAll(".agent-selection-profile");
     agentProfiles.forEach(profile => {
         profile.addEventListener("click", function(){
@@ -98,6 +86,22 @@ function insertListener(agents){
             changeAgentInfo(agentData);
         });
     });
+}
+
+function insertListener(agents){
+    leftButtonWardrobe.addEventListener('click', function(){
+        if(currentActiveSlide <= 0) return;
+        currentActiveSlide -= 1;
+        agentWardrobeProfilesViewer.style.translate = currentActiveSlide * -100 + '%';
+    });
+
+    rightButtonWardrobe.addEventListener('click', function(){
+        if(currentActiveSlide >= totalSlide - 1) return;
+        currentActiveSlide += 1;
+        agentWardrobeProfilesViewer.style.translate = currentActiveSlide * -100 + '%';
+    });
+
+    insertClickEventToAgentProfile();
 
     window.addEventListener('resize', function(){
         checkScreenSize(agents);
@@ -133,7 +137,8 @@ function checkScreenSize(agents){
 }
 
 function resizeWardrobeSelection(agents){
-    agentWardrobeProfilesViewer.innerHTML = '';
+    const previousProfileEl = document.querySelectorAll(".agent-selection-profile");
+
     const slider = [];
     currentActiveSlide = 0;
     agentWardrobeProfilesViewer.style.translate = currentActiveSlide * -100 + '%';
@@ -144,16 +149,18 @@ function resizeWardrobeSelection(agents){
         sliderEl.classList.add('agent-selection-profiles-slide');
         const profileEl = agents.slice(i * agentProfilePerSlider, i * agentProfilePerSlider + agentProfilePerSlider).map((agent, index) => 
             `
-                <div class="agent-selection-profile ${i == 0 && index == 0 ? 'active' : ''}" data-agent=${agent.slug}>
-                    <img src="${agent.profile}" alt="agent-profile-${agent.name}">
-                </div>
-                `
+            <div class="agent-selection-profile ${ previousProfileEl[i * agentProfilePerSlider + index].classList.contains('active') ? 'active' : ''}" data-agent=${agent.slug}>
+                <img src="${agent.profile}" alt="agent-profile-${agent.name}">
+            </div>
+            `
         ).join('');
         sliderEl.innerHTML = profileEl;
         slider.push(sliderEl);
     }
-
+    
+    agentWardrobeProfilesViewer.innerHTML = '';
     slider.forEach(slide => agentWardrobeProfilesViewer.append(slide));
+    insertClickEventToAgentProfile(agents);
 }
 
 export default async function AgentWardrobe(agents){

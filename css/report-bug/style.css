@@ -36,33 +36,6 @@
     opacity: .5;
     animation: blink 2s infinite alternate;
 }
-
-@keyframes blink {
-    0% {
-        filter: grayscale(1);
-        opacity: 0.4;
-    }
-    20% {
-        filter: grayscale(0.7);
-        opacity: 0.75;
-    }
-    40% {
-        filter: grayscale(0.5);
-        opacity: 0.6;
-    }
-    60% {
-        filter: grayscale(0.8);
-        opacity: 0.9;
-    }
-    80% {
-        filter: grayscale(0.5);
-        opacity: 0.7;
-    }
-    100% {
-        filter: grayscale(1);
-        opacity: 0.5;
-    }
-}
 /* hero section end */
 
 /* report data section start */
@@ -213,5 +186,17 @@ textarea {
 .error-message {
     display: none;
     color: red;
+}
+
+.form-checkbox {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    align-items: center;
+}
+
+.form-checkbox input[type='checkbox']{
+    width: 1.5rem;
+    height: 1.5rem;
 }
 /* report form section end */

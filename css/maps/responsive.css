@@ -41,6 +41,10 @@
 }
 
 @media(max-width: 500px){
+    #maps-slider .map-images {
+        gap: .5rem;
+    }
+    
     #maps-slider .map-images-viewer {
         height: 20.5625rem;
     }

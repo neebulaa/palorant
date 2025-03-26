@@ -20,6 +20,7 @@ let totalSlide = 0;
 let currentActiveSlide = 0;
 let agentProfilePerSlider = 6;
 let previousWindowWidth = innerWidth;
+let firstTimeResize = 1;
 
 function changeAgentInfo(agentData){
     setPropertyValue(agentWardrobe, "--agent-color", agentData.agentColor);
@@ -104,7 +105,8 @@ function insertListener(agents){
     insertClickEventToAgentProfile();
 
     window.addEventListener('resize', function(){
-        if (window.innerWidth !== previousWindowWidth) {
+        if (window.innerWidth !== previousWindowWidth || firstTimeResize) {
+            firstTimeResize = 0;
             checkScreenSize(agents);
         }
     });

@@ -317,7 +317,7 @@
     
     background: var(--agent-wallpaper);
     background-size: cover;
-    background-position: 50% 0%;
+    background-position: 0% 50%;
     background-repeat: no-repeat;
     filter: grayscale(1);
     opacity: 40%;

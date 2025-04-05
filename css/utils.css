@@ -228,7 +228,7 @@ body {
     width: 43.9375rem; /* 703px */
     height: 29.0625rem; /* 465px */
     translate: 30% -50%;
-    background: url("../../assets/images/logo/logo-fit.png");
+    background: url("../assets/images/logo/logo-fit.png");
     background-size: cover;
     opacity: 5%;
     z-index: -1;
@@ -381,7 +381,7 @@ body {
     width: 43.9375rem; /* 703px */
     height: 29.0625rem; /* 465px */
     translate: 30% -50%;
-    background: url("../../assets/images/logo/logo-fit.png");
+    background: url("../assets/images/logo/logo-fit.png");
     background-size: cover;
     opacity: 5%;
     z-index: -1;

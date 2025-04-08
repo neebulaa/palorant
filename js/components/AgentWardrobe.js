@@ -142,7 +142,7 @@ function checkScreenSize(agents){
 
 function resizeWardrobeSelection(agents){
     const previousProfileEl = document.querySelectorAll(".agent-selection-profile");
-
+    console.log(previousProfileEl);
     const slider = [];
     currentActiveSlide = 0;
     agentWardrobeProfilesViewer.style.translate = currentActiveSlide * -100 + '%';
@@ -203,7 +203,7 @@ export default async function AgentWardrobe(agents){
     abilityName.textContent = agents[0].specialAbilities[0].name;
     abilityDesc.textContent = agents[0].specialAbilities[0].description;
     abilityVideo.src = agents[0].specialAbilities[0].video;
-    console.log(agents[0].specialAbilities[0].video)
+    // console.log(agents[0].specialAbilities[0].video)
 
     checkScreenSize(agents);
     insertListener(agents);

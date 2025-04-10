@@ -1,22 +1,22 @@
 [
     {
         "title" : "Game Changer Championa",
-        "description" : "Lörem ipsum immunitetspass ekotiv kontrartad. Nörar pseudoplalingar dinyv. Hafongen hexas euronde. Kanysm disat måligt. Jugt tejyl, bepongen.",
+        "description" : "Discover the latest innovations in gaming technology that are se xt to revolutionize the industry.",
         "thumb" : "./assets/images/home/latest-news/news1.png"
     },
     {
         "title" : "New Comers Greetings",
-        "description" : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam porro ad facere vitae aliquid optio commodi praesentium, temporibus iure!",
+        "description" : "Explore the cutting-edge advancements in technology at the Future Tech Expo.",
         "thumb" : "./assets/images/home/latest-news/news2.png"
     },
     {
         "title" : "Cheater Punishment",
-        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum enim fugiat quod aperiam incidunt culpa praesentium ipsam explicabo pariatur.",
+        "description" : "Learn how artificial intelligence is transforming healthcare.",
         "thumb" : "./assets/images/home/latest-news/news3.png"
     },
     {
         "title" : "Palorant Championship tour",
-        "description" : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae deserunt necessitatibus fuga tempore iste, soluta mollitia aliquid consectetur.",
+        "description" : "Join the global conversation on sustainable energy solutions.",
         "thumb" : "./assets/images/home/latest-news/news4.png"
     }
 ]
